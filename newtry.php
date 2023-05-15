@@ -31,7 +31,13 @@
         border-width: 0.5px;
 
     }
-
+    .flatpickr:focus{  
+        border-top : none;
+        border-left : none;
+        border-right: none;
+        border-width: 2px;
+        border-color: red;
+    }
     .dropbtn:hover,
     .dropbtn:focus {
         background-color: white;
@@ -50,7 +56,7 @@
 
     .dropdown-content {
         display: none;
-        position: absolute;
+        position: ;
         background-color: white;
         width: 140%;
         overflow: auto;
@@ -201,7 +207,7 @@
         <button type="submit" onclick="insertApp()" id="submit" style="margin:10px">Enviar</button>
 
         </form>
-
+ 
         <script>
             var form = document.getElementById("myDropdown");
             var inputs = form.querySelectorAll("input, textarea, select");
@@ -210,7 +216,7 @@
                     for (var i = 0; i < inputs.length; i++) {
                         inputs[i].disabled = false;
                     }
-                    document.getElementById("dropdown").submit.disabled = false;
+                   /* document.getElementById("dropdown").submit.disabled = false;*/
                 } else {
                     for (var i = 0; i < inputs.length; i++) {
                         inputs[i].disabled = true;
@@ -234,7 +240,7 @@
                 var motive = document.getElementById("motive").value;
                 console.log(hour)
                 console.log(formatted_date)
-                document.getElementById("submit").form.addEventListener("submit", function(event) {
+                document.getElementById("myDropdown").form.addEventListener("myDropdown", function(event) {
                     event.preventDefault();
                     console.log(formatted_date);
                     console.log(name);
