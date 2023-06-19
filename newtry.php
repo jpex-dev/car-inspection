@@ -191,7 +191,7 @@
 
         <p>
             <input type="checkbox" id="politica_privacidade" name="politica_privacidade" required>
-            <label for="politica_privacidade">Tomei conhecimento da Política de Privacidade da Controlauto.</label>
+            <label for="politica_privacidade">Tomei conhecimento da Política de Privacidade da Insparedes.</label>
         </p>
 
         <button type="submit" onclick="insertApp()" id="submit" style="margin:10px">Enviar</button>
