@@ -129,26 +129,11 @@
 </div>
 </div>
 <script>
-    /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
 
-
-    /* Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }*/
 </script>
 <div class="dropdown" id="dropdown">
 
@@ -206,7 +191,7 @@ toggle between hiding and showing the dropdown content */
 
         <p>
             <input type="checkbox" id="politica_privacidade" name="politica_privacidade" required>
-            <label for="politica_privacidade">Tomei conhecimento da Política de Privacidade da Controlauto.</label>
+            <label for="politica_privacidade">Tomei conhecimento da Política de Privacidade da Insparedes.</label>
         </p>
 
         <button type="submit" onclick="insertApp()" id="submit" style="margin:10px">Enviar</button>
