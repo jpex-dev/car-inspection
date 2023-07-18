@@ -92,12 +92,11 @@
                 dataType: 'json',
                 success: function(response) {
                     document.getElementById("timer").disabled = false;
-                    // Clear existing options in the dropdown
                     $('#timer').empty();
                     // Add each value in the response as a new option
                     for (var i = 0; i < response.length; i++) {
                         var value = response[i];
-                        var label = value; // Set the label to the same as the value, but you can modify this to fit your use case
+                        var label = value;
                         $('#timer').append($('<option>', {
                             value: value,
                             text: label
